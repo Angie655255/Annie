@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+<head>
+<title>Las mejores recetas</title>
+<link rel="stylesheet" href="estilos.css">
+<style>
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size:100%;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background:#333;
+    color:#eee;
+    width:100%;
+}
+
+input#abrir-cerrar {
+    visibility:hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+
+label[for="abrir-cerrar"] {
+    cursor:pointer;
+    padding: 1rem;
+    background-color:black;
+    color:#fff;
+    display:inline-block;
+    width:100%;
+
+}
+
+.cerrar {
+    display:none;
+}
+
+#sidebar {
+    width:0;
+}
+
+#contenido {
+    margin-left:0;
+}
+
+input#abrir-cerrar:checked ~ #sidebar {
+    width:300px;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+    margin-left:300px;
+    transition: margin-left .4s;
+}
+
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+    display:inline;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+    display:none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    
+}
+
+.sidebar a:hover{
+    color:#fff;
+    background-color: #4062BB;
+
+}
+
+h1 {
+    color: #1C1C1C;
+    font-size:180%;
+    font-weight:normal;
+}
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;   
+}
+</style>
+
+
+</head>
+<body>
+    <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+    <label for="abrir-cerrar">&#9776; <span class="abrir">Nuestras Recetas</span><span class="cerrar">Cerrar</span></label>
+    <div id="sidebar" class="sidebar">
+        <ul class="menu">
+            <li><a href="Arroz tres delicias.html">Arroz tres delicias</a></li>
+            <li><a href="Baozi.html">Baozi</a></li>
+            <li><a href="Barba de dragón.html">Barba de dragón</a></li>
+            <li><a href="Bizcocho chino.html">Bizcocho chino</a></li>
+            <li><a href="Bolitas de Sésamo.html">Bolitas de sésamo</a></li>
+            <li><a href="Bollos de piña.html">Bollos de piña</a></li>
+            <li><a href="Cha siu.html">Cha siu</a></li>
+            <li><a href="Congree de arroz.html">Congree de arroz</a></li>
+            <li><a href="Costillitas chinas.html">Costillas chinas</a></li>
+            <li><a href="Dumplings de cerdo y camarones.html">Dumplings de cerdo y camarones</a></li>
+            <li><a href="Flan Chino.html">Flan chino</a></li>
+            <li><a href="Galletas de la fortuna.html">Galletas de la fortuna</a></li>
+            <li><a href="Mantou.html">Mantou</a></li>
+            <li><a href="Nian gao.html">Nian gao</a></li>
+            <li><a href="Noodles picantes de pollo, jengibre y chile.html">Noodles picantes de pollo, jengibre y chile</a></li>
+            <li><a href="Pastel de luna.html">Pastel de luna</a></li>
+            <li><a href="Pato laqueado a la pekinesa.html">Pato laqueado a la pekinesa</a></li>
+            <li><a href="Pollo kung pao.html">Pollo Kung pao</a></li>
+            <li><a href="Rollitos de primavera.html">Rollitos primavera</a></li>
+            <li><a href="Sachima.html">Sachima</a></li>
+            <li><a href="Salsa agridulce.html">Salsa agridulce</a></li>
+            <li><a href="Sopa Wonton.html">Sopa Wonton</a></li>
+            <li><a href="Tallarines tres delicias.html">Tallarines tres delicias</a></li>
+            <li><a href="Tarta de Huevo (Dan Tat).html">Tarta de huevo (Dan tat)</a></li>
+            <li><a href="Zongzi.html">Zongzi</a></li>
+            <li><a href="Pagina contacto.html">Página de contacto</a></li>
+        </ul>
+    </div>
+    <center><p><h1><b>Las mejores recetas de comida china para celebrar el Año Nuevo Chino</b></h1></p></center>
+    <center><img src="https://elviajerofeliz.com/wp-content/uploads/2020/09/comida-tipica-de-china.jpg" width="800" height="400" alt="Comida tipica China"></center>
+    <main>
+    <article>
+        <p class="texto-justificado">China todos los años festeja  el Año Nuevo Chino o Lunar, es la festividad tradicional más importante del año en el calendario chino, compartida también en otros países asiáticos. A diferencia del nuestro occidental, es una fecha que varía cada año al seguir el calendario lunisolar, y marca el inicio de las cosechas y el comienzo del fin del invierno, por ello también se conoce como Fiesta de la Primavera. Despedimos así al Buey para dar la bienvenida al Año Nuevo del Tigre, y lo hacemos, como no podía ser de otra manera, homenajeando su cocina.</p>
+        <p><h2><b>La cocina china auténtica y su versión occidental</b></h2></p>
+        <p class="texto-justificado">Hablar genéricamente de "cocina china" no hace en absoluto justicia a una gastronomía tan rica, variada y fascinante como es la del gigante asiático. Las dimensiones del país, su complejo pasado histórico y las diferentes regiones y culturas que dan forma a la China actual, reflejan una vasta cocina difícil de condensar en pocos párrafos.</p>
+        <p class="texto-justificado">Lo que entendemos los occidentales como cocina china es la versión adaptada llegada hace ya varias décadas a través de la población que empezaba a emigrar del país. Mucho antes que descubriéramos el sushi, los restaurantes chinos se hicieron un hueco en nuestros barrios y fueron destino habitual de comidas y cenas familiares o de celebraciones de amigos que buscaban romper la rutina.</p>
+        <p class="texto-justificado"></p>
+        <img src="https://i.blogs.es/5d51c2/cocina-china/1366_2000.jpg" width="390" height="320" alt="Radio">
+        <p></p>
+        <p></p>
+        </div>
+        </p>
+    </article>
+    </main>
+    </div>
+    <footer class="PP">
+    </div>
+    <div class="grupo-1">
+        <b>Angie Blog</b><small>&copy;2022 <em>Todos los derechos están reservados</em></small>
+        <p><em><small>Imagenes con fines ilustrativos</small></em></p>
+    </div>
+    </footer>
+    </p>
+</body>
+</html> 

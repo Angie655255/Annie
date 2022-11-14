@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: #404040;
+    background-image: url("https://st2.depositphotos.com/3418487/11372/i/600/depositphotos_113723498-stock-photo-blur-blue-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  h1 {
+    margin: 0;
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
+  h2 {
+    margin: 0;
+    padding-top: 3rem;
+    padding-left: 2rem;
+  }
+  .PP{
+    width: 100%;
+    background-color: #015C92;
+    ;
+  }
+  .PP .grupo-1{
+    background: -moz-linear-gradient(left,#7FACD6,lightyellow);
+    background: -webkit-linear-gradient(left,#7FACD6,lightyellow);
+    background: -ms-linear-gradient(left,#7FACD6,lightyellow);
+    background: -o-linear-gradient(left,#7FACD6,lightyellow);
+    background: linear-gradient(to right,#7FACD6,lightyellow);;
+    padding: 15px 10px;
+    text-align: center;
+    color: #2D82B5;
+  }
+  .pie-pagina .grupo-2 small{
+    font-size: 19px;}
